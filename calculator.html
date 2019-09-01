@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator App Created By CJ</title>
+</head>
+<body>
+    <h3>Calculator by CJ</h3>
+    <form name ="answer">
+           <diV class="displaycontainer">
+        <div class="container">
+            <input type="text" placeholder="0" name = "result" > 
+        </div>
+        <div class = "table">
+            <table>
+                <div class = "first-line">
+                <tr>
+                    <td><input type="button" name="num1" value ="1" onclick="numberCalculation(num1.value)"></td>
+                    <td><input type="button" name="num2" value ="2" onclick="numberCalculation(num2.value)"></td>
+                    <td><input type="button" name="num3" value ="3" onClick="numberCalculation(num3.value)"></td>
+                    <td><input type="button" name="addSign" value ="+" onClick="numberCalculation(addSign.value)"></td>
+                </tr>
+            </div>
+            <div class = "second-line">
+                    <tr>
+                            <td><input type="button" name="num4" value ="4" onclick="numberCalculation(num4.value)"></td>
+                            <td><input type="button" name="num5" value ="5" onclick="numberCalculation(num5.value)"></td>
+                            <td><input type="button" name="num6" value ="6" onClick="numberCalculation(num6.value)"></td>
+                            <td><input type="button" name="substractSign" value ="-" onClick="numberCalculation(substractSign.value)"></td>
+                        </tr>
+            </div>
+
+            <div class = "third-line">
+                    <tr>
+                            <td><input type="button" name="num7" value ="7" onclick="numberCalculation(num7.value)"></td>
+                            <td><input type="button" name="num8" value ="8" onclick="numberCalculation(num8.value)"></td>
+                            <td><input type="button" name="num9" value ="9" onClick="numberCalculation(num9.value)"></td>
+                            <td><input type="button" name="multiplySign" value ="*" onClick="numberCalculation(multiplySign.value)"></td>
+
+                        </tr>
+            </div>
+
+            <div class ="last-line">
+                    <tr>
+                            <td><input type="button" name="num0" value ="0" onclick="numberCalculation(num0.value)"></td>
+                            <td><input type="button" name="divide" value ="/" onclick="numberCalculation(divide.value)"></td>
+                            <td><input type="button" name="dot" value ="." onClick="numberCalculation(dot.value)"></td>
+                            <td><input type="button"  value ="=" onClick="result.value=eval(result.value)"></td>
+                        </tr>
+            </div>
+            </table>
+        </div>
+    </diV>
+    </form>
+    <script>
+function numberCalculation(calc){
+answer.result.value = answer.result.value + calc;
+
+}
+
+    </script>
+</body>
+</html>

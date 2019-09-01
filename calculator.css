@@ -1,0 +1,34 @@
+*{
+    background-color: white;
+    color: blue;
+    font-size: 20px;
+}
+
+form{
+    padding-top: 100px;
+    
+    
+    
+
+}
+
+.displaycontainer{
+    border: 5px solid blue;
+    margin-right: 600px;
+}
+.container{
+    margin:40px;
+
+}
+.container input{
+    background-color: goldenrod;
+}
+
+table{
+    margin:30px;
+}
+
+td input{
+    padding: 20px;
+    
+}
